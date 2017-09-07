@@ -1,9 +1,8 @@
 # Disaster_Management_app
 Get stats of latest earthquakes and weather in different places !
-
 Know about weather in different places around the world and even receive notifications!
 
-For weather data--
+## For weather data--
 
 
 
@@ -20,5 +19,4 @@ The latest  version includes-
 -> Forecasts for five upcoming days included!.
 
 Data source of weather -> openweathermap.org
-
 Data Source of earthquakes -> ( USGS Website )
