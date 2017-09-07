@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Disaster Management</string>
+    <string name="quake">Disaster Management</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="local_service_label">Hello blank fragment</string>
+    <string name="local_service_started">Hello blank fragment</string>
+
+    <string name="local_service_stopped">Hello blank fragment</string>
+    <string name="alarm_service_label">hello</string>
+
+</resources>

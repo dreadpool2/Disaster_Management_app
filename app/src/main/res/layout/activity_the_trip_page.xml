@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.potter.harry.quakereport.the_trip_page">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.1"
+        android:id="@+id/timeline"
+        android:fontFamily="monospace"
+        android:text="Kolkata->Hoogly->Chennai->Bangalore"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:layout_margin="4dp"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Chennai"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:fontFamily="monospace"
+            android:textColor="#000000"
+            android:id="@+id/trip_place"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="Chennai"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:background="#000000"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:text="300"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:id="@+id/weather_stats"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="Chennai"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:background="#000000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="Next"
+            android:gravity="center"
+            android:onClick="nexta"
+            android:id="@+id/nexta"/>
+
+
+    </LinearLayout>
+</LinearLayout>

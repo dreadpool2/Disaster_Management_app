@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for a list of earthquakes -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+
+ <android.support.design.widget.AppBarLayout
+     android:layout_width="match_parent"
+     android:id="@+id/app_bar"
+     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+     android:layout_height="wrap_content">
+
+
+
+
+
+  <android.support.design.widget.CollapsingToolbarLayout
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:fitsSystemWindows="true"
+      android:id="@+id/collapse"
+      app:layout_scrollFlags="scroll|exitUntilCollapsed"
+      app:contentScrim="?attr/colorAccent"
+      >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:text="@string/quake"
+       android:id="@+id/hero"
+       android:textColorHint="#000000"
+       android:textSize="10sp"
+       android:textColor="#ffffff"
+       android:fontFamily="sans-serif-smallcaps"
+       android:textAlignment="center"
+       android:gravity="center_vertical"
+       android:scaleType="centerCrop"
+       app:layout_collapseMode="parallax"
+       android:fitsSystemWindows="true"
+       android:background="@drawable/maxres"/>
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#ffffff"
+          android:layout_gravity="bottom"
+          android:textAlignment="center"
+          android:gravity="center"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp"
+          android:textColor="#000000"
+          android:text="Developed By Sanyog Ghosh"/>
+
+      <android.support.v7.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       app:layout_collapseMode="pin"
+  />
+
+
+
+
+
+
+  </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/qj"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+      android:layout_height="3500dp"
+      android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="340dp"
+            android:background="@drawable/your_rounded_shape"
+            android:layout_marginTop="27.5dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp" >
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="340dp"
+            android:elevation="4dp"
+            android:onClick="events"
+            android:background="@drawable/your_rounded_shape"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/earthitaly"
+                android:layout_height="155dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="12dp"
+                android:text="Earthquake Events"
+                android:fontFamily="monospace"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:layout_marginLeft="12dp"
+                android:text="Get Latest Quake stats in the world. Filter results by country , magnitude and date ! (Notifications not Included)"
+                android:fontFamily="casual"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="340dp"
+            android:background="#ffffff"
+            android:layout_marginTop="27.5dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp" >
+
+
+        </FrameLayout>
+
+
+
+
+
+
+        <FrameLayout
+            android:layout_width="340dp"
+            android:elevation="4dp"
+            android:onClick="weather"
+            android:background="@drawable/your_rounded_shape"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/c"
+                android:layout_height="155dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="12dp"
+                android:text="Weather Report"
+                android:fontFamily="monospace"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:layout_marginLeft="12dp"
+                android:text="Get Weather Stats of any place in the world. (Notifications also Included !)"
+                android:onClick="weather"
+                android:fontFamily="casual"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="340dp"
+            android:background="#00ffffff"
+            android:layout_marginTop="27.5dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp" >
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="340dp"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:background="@drawable/your_rounded_shape"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/summertrip"
+                android:layout_height="155dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="12dp"
+                android:text="Trip Advisor"
+                android:id="@+id/tripadvisor"
+                android:onClick="tripadvisor"
+                android:fontFamily="monospace"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="340dp"
+            android:background="#00ffffff"
+            android:layout_marginTop="27.5dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp" >
+
+
+        </FrameLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1887633011875798/8031432642">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/trip_status"
+            android:text="STARTS"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:textColor="#ff0000"
+            android:layout_weight="0.35"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:text="25"
+            android:id="@+id/trip_day"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_weight="0.45"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="start"
+            android:textAlignment="center"
+            android:text="JAN"
+            android:id="@+id/trip_month"
+            android:textColor="#392e2e"
+            android:layout_weight="0.25"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="start"
+            android:textAlignment="center"
+            android:text="2017"
+            android:id="@+id/trip_year"
+            android:textColor="#135e71"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/nameoftrip"
+            android:layout_weight="0.47"
+            android:text="The Goa Trip"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2a2c2d"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="22sp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/the_trip"
+            android:layout_weight="0.73"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Alwarpet &#10132; Chennai &#10132; Hong Kong &#10132; Malayasia &#10132; India &#10132; Goa"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:gravity="bottom"
+            android:textColor="#ff0000"
+            android:layout_weight="0.45"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:id="@+id/delete"
+            android:gravity="bottom"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:textColor="#ff0000"
+            android:layout_weight="0.15"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
